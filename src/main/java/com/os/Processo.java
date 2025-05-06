@@ -11,15 +11,7 @@ public class Processo {
         this.tempoChagada = tempoChagada;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getTempoTotal() {
-        return tempoTotal;
-    }
-
-    public int getTempoChagada() {
-        return tempoChagada;
+    public boolean terminou(){
+        return this.tempoTotal == 0;
     }
 }
