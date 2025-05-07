@@ -4,14 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+
+    private static void printTitulo(){
+        System.out.println("  █████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗████████╗███╗   ███╗ ██████╗ ███████╗                                ");
+        System.out.println(" ██╔══██╗██║     ██╔════╝ ██╔═══██╗██╔══██╗██║╚══██╔══╝████╗ ████║██╔═══██╗██╔════╝                                ");
+        System.out.println(" ███████║██║     ██║  ███╗██║   ██║██████╔╝██║   ██║   ██╔████╔██║██║   ██║███████╗                                ");
+        System.out.println(" ██╔══██║██║     ██║   ██║██║   ██║██╔══██╗██║   ██║   ██║╚██╔╝██║██║   ██║╚════██║                                ");
+        System.out.println(" ██║  ██║███████╗╚██████╔╝╚██████╔╝██║  ██║██║   ██║   ██║ ╚═╝ ██║╚██████╔╝███████║                                ");
+        System.out.println(" ╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝     ╚═╝ ╚═════╝ ╚══════╝                                ");
+        System.out.println(" ██████╗ ███████╗                                                                                                 ");
+        System.out.println(" ██╔══██╗██╔════╝                                                                                                 ");
+        System.out.println(" ██║  ██║█████╗                                                                                                   ");
+        System.out.println(" ██║  ██║██╔══╝                                                                                                   ");
+        System.out.println(" ██████╔╝███████╗                                                                                                 ");
+        System.out.println(" ╚═════╝ ╚══════╝                                                                                                 ");
+        System.out.println(" ███████╗███████╗ ██████╗ █████╗ ██╗      ██████╗ ███╗   ██╗ █████╗ ███╗   ███╗███████╗███╗   ██╗████████╗ ██████╗ ");
+        System.out.println(" ██╔════╝██╔════╝██╔════╝██╔══██╗██║     ██╔═══██╗████╗  ██║██╔══██╗████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔═══██╗");
+        System.out.println(" █████╗  ███████╗██║     ███████║██║     ██║   ██║██╔██╗ ██║███████║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║");
+        System.out.println(" ██╔══╝  ╚════██║██║     ██╔══██║██║     ██║   ██║██║╚██╗██║██╔══██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ██║   ██║");
+        System.out.println(" ███████╗███████║╚██████╗██║  ██║███████╗╚██████╔╝██║ ╚████║██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ╚██████╔╝");
+        System.out.println(" ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ");
+        System.out.println("                                                                                                                  ");
+    }
+
     public static void main(String[] args) {
-
-        //Classe entrada para captura todos os processos
-        //digitados pelo usuario que serao salvos na lista de processos
-        List<Processo> processoList = Entrada.inserir();
-
-        // Setar Quantum
-        int quantum = 2;
-
+        printTitulo();
+        RoundRobin.main();
     }
 }
