@@ -29,8 +29,8 @@ public class Main {
     public static void main(String[] args) {
         printTitulo();
 
-        //Classe entrada para captura todos os processos
-        //digitados pelo usuario que serao salvos na lista de processos
+        //Classe entrada para captura todos os processos digitados pelo usuario que serao salvos na lista de processos
+        //A lista de processo servirá para os dois algoritmos, então não é nécessario criar outra lista de processos
         System.out.println("Inserindo lista de processos!");
         List<Processo> processoList = Entrada.inserir();
 
