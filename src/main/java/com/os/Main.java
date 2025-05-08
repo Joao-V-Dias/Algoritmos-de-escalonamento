@@ -29,6 +29,13 @@ public class Main {
 
     public static void main(String[] args) {
         printTitulo();
-        RoundRobin.main();
+
+        //Classe entrada para captura todos os processos
+        //digitados pelo usuario que serao salvos na lista de processos
+        System.out.println("Inserindo lista de processos!");
+        List<Processo> processoList = Entrada.inserir();
+
+        SRT.main(processoList);
+        RoundRobin.main(processoList);
     }
 }

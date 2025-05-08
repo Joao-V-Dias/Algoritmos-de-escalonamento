@@ -2,9 +2,8 @@ package com.os;
 
 import java.util.List;
 
-public class RoundRobin {
+public class SRT {
     public static void main(List<Processo> processoList){
-        // Setar Quantum
-        int quantum = 2;
+
     }
 }
