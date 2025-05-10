@@ -25,7 +25,6 @@ O SRT é uma variação preemptiva do algoritmo SJF (Shortest Job First). A cada
 
 - Escalonamento de processos
 - Algoritmos preemptivos
-- Entrada e saída padrão com `Scanner`
 - Manipulação de listas e controle de fluxo
 
 ---
