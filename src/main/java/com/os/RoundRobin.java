@@ -6,8 +6,8 @@ import java.util.List;
 
 public class RoundRobin {
     public static void main(List<Processo> processoEntrada, int quantum){
-        // Iniciar timeline
-        int timeline = -1;
+        // Iniciar time
+        int time = 0;
         // Representa as vezes de uso até o quantum
         int uso = 0;
 
@@ -20,9 +20,9 @@ public class RoundRobin {
         Iterator<Processo> it = processos.iterator();
         while (it.hasNext()) {
             Processo processo = it.next();
-            if(processo.getTempoExecucao() <= 0 ){
+            if(processo.getTempoExecucao() <= 0 || processo.getTempoChegada() < 0){
                 it.remove();
-            }else if (processo.getTempoChegada() == timeline) {
+            }else if (processo.getTempoChegada() == time) {
                 fila.add(processo);
                 it.remove();
             }
@@ -34,8 +34,8 @@ public class RoundRobin {
                 Processo atual = fila.get(0);
 
                 atual.executar();
-                Imprimir.timeline(timeline, atual.getName());
-                timeline++;
+                Imprimir.timeline(time, atual.getName());
+                time++;
                 uso++;
 
                 if (atual.encerrado()) {
@@ -51,16 +51,14 @@ public class RoundRobin {
             Iterator<Processo> iterator = processos.iterator();
             while (iterator.hasNext()) {
                 Processo processo = iterator.next();
-                if(processo.getTempoExecucao() <= 0 ){
-                    iterator.remove();
-                }else if (processo.getTempoChegada() == timeline) {
+                if (processo.getTempoChegada() == time ) {
                     fila.add(processo);
                     iterator.remove();
                 }
             }
             if(fila.isEmpty()){
-                timeline++;
-                if(timeline != 0)Imprimir.timeline(timeline);
+                Imprimir.timeline(time);
+                time++;
             }
         }
     }
