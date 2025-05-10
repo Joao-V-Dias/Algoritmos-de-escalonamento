@@ -5,13 +5,35 @@ public class Processo {
     private int tempoExecucao;
     private int tempoChagada;
 
-    public Processo(String name, int tempoExecucao, int tempoChagada) {
+    public Processo(String name, int tempoChegada, int tempoExecucao) {
         this.name = name;
         this.tempoExecucao = tempoExecucao;
-        this.tempoChagada = tempoChagada;
+        this.tempoChagada = tempoChegada;
     }
 
-    public boolean terminou(){
-        return this.tempoExecucao == 0;
+    public int getTempoChegada() {
+        return tempoChagada;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getTempoExecucao() {
+        return tempoExecucao;
+    }
+
+    public void executar(){
+        if (this.tempoExecucao > 0) this.tempoExecucao--;
+    }
+
+    public boolean encerrado(){
+        return this.tempoExecucao <= 0;
+    }
+
+    @Override
+    public String toString() {
+        return "{ Processo: " + this.name + ", chegada: " + this.tempoChagada
+                + ", tempo execucao: " + this.tempoExecucao + " }";
     }
 }
