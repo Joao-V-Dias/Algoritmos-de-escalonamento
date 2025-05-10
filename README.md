@@ -6,7 +6,6 @@ Este projeto implementa dois algoritmos clássicos de escalonamento de processos
 
 O programa permite que o usuário insira uma lista de processos via terminal, especificando para cada um: nome, tempo de execução e tempo de chegada. Os dados coletados são processados pelos algoritmos de escalonamento conforme a lógica definida para cada um.
 
-A entrada é realizada por meio do `Scanner`, e os processos são armazenados em uma lista para uso nas simulações dos algoritmos.
 
 ## 🔄 Algoritmos Implementados
 
