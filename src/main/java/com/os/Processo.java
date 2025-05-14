@@ -33,7 +33,7 @@ public class Processo {
 
     @Override
     public String toString() {
-        return "{ Processo: " + this.name + ", chegada: " + this.tempoChagada
-                + ", tempo execucao: " + this.tempoExecucao + " }";
+        return "Processo: [" + this.name + ", chegada: " + this.tempoChagada
+                + ", tempo execucao: " + this.tempoExecucao + " ]";
     }
 }
