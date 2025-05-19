@@ -23,6 +23,7 @@ public class Entrada {
 
             System.out.print("Tempo de execucao: ");
             int tempoExecucao = input.nextInt();
+            input.nextLine();
 
             listaProcesso.add(new Processo(nome, tempoChegada, tempoExecucao));
         }

@@ -29,6 +29,8 @@ public class RoundRobin {
         }
 
         // Timeline
+        System.out.println("\n[ Escalonamento RR - Roudin Robin]");
+        Imprimir.cabecalho();
         while(!processos.isEmpty() || !fila.isEmpty()){
             if (!fila.isEmpty()) {
                 Processo atual = fila.get(0);
@@ -61,5 +63,6 @@ public class RoundRobin {
                 time++;
             }
         }
+        Imprimir.rodape();
     }
 }
