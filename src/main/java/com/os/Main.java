@@ -6,33 +6,14 @@ public class Main {
     public static final String BLUE = "\u001B[34m";
     public static final String RESET = "\u001B[0m";
 
-    private static void printTitulo(){
-        System.out.println(BLUE +
-            " █████  ██       ██████   ██████  ██████  ██ ████████ ███    ███  ██████  ███████     ██████  ███████             \n" +
-            "██   ██ ██      ██       ██    ██ ██   ██ ██    ██    ████  ████ ██    ██ ██          ██   ██ ██                  \n" +
-            "███████ ██      ██   ███ ██    ██ ██████  ██    ██    ██ ████ ██ ██    ██ ███████     ██   ██ █████               \n" +
-            "██   ██ ██      ██    ██ ██    ██ ██   ██ ██    ██    ██  ██  ██ ██    ██      ██     ██   ██ ██                  \n" +
-            "██   ██ ███████  ██████   ██████  ██   ██ ██    ██    ██      ██  ██████  ███████     ██████  ███████             \n" +
-            "                                                                                                                  \n" +
-            "                                                                                                                  \n" +
-            "███████ ███████  ██████  █████  ██       ██████  ███    ██  █████  ███    ███ ███████ ███    ██ ████████  ██████  \n" +
-            "██      ██      ██      ██   ██ ██      ██    ██ ████   ██ ██   ██ ████  ████ ██      ████   ██    ██    ██    ██ \n" +
-            "█████   ███████ ██      ███████ ██      ██    ██ ██ ██  ██ ███████ ██ ████ ██ █████   ██ ██  ██    ██    ██    ██ \n" +
-            "██           ██ ██      ██   ██ ██      ██    ██ ██  ██ ██ ██   ██ ██  ██  ██ ██      ██  ██ ██    ██    ██    ██ \n" +
-            "███████ ███████  ██████ ██   ██ ███████  ██████  ██   ████ ██   ██ ██      ██ ███████ ██   ████    ██     ██████  \n" +
-            "                                                                                                                  \n" +
-            "                                                                                                                  " + RESET);
-    }
-
     public static void main(String[] args) {
-        printTitulo();
+        System.out.println(BLUE + "Algoritmos de Escalonamento" + RESET);
 
         // Lista de processos
         List<Processo> entrada = Entrada.ler();
 
         SRT.main(entrada);
 
-        RoundRobin.main(entrada, 3);
-
+        RoundRobin.main(entrada, 2);
     }
 }

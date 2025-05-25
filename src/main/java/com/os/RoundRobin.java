@@ -29,7 +29,7 @@ public class RoundRobin {
         }
 
         // Timeline
-        System.out.println("\n[ Escalonamento RR - Roudin Robin]");
+        System.out.println("\n[ Escalonamento RR - Roudin Robin ]");
         Imprimir.cabecalho();
         while(!processos.isEmpty() || !fila.isEmpty()){
             if (!fila.isEmpty()) {

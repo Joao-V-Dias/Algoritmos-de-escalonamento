@@ -65,18 +65,5 @@ public class SRT {
         }
 
         Imprimir.rodape();
-
-        // Exibe métricas
-        /*System.out.println("\nProcesso | Chegada | Execução | Saída | Espera | Turnaround");
-        for (Processo p : tempoSaida.keySet()) {
-            int chegada = p.getTempoChegada();
-            int exec = p.getTempoExecucao();
-            int saida = tempoSaida.get(p);
-            int turnaround = saida - chegada;
-            int espera = turnaround - exec;
-
-            System.out.printf("  %6s |   %6d |   %7d |  %4d |  %5d |     %8d\n",
-                    p.getName(), chegada, exec, saida, espera, turnaround);
-        }*/
     }
 }
